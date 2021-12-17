@@ -1,0 +1,12 @@
+defaultPortal: live
+portals:
+  - name: live
+    portalId: 9073261
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CP6ljsDcLxIIAAUAAAAAAAwY7eSpBCCZjdsMKO7pDDIUuR19npBWg6MKbOWSIt2ImF75nLM6IQAABEEAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAPEIUlGCw_ofhjT2GL-hx6XCmlP0Mf95KA25hMVIAWgA
+        expiresAt: '2021-12-17T10:50:17.222Z'
+    personalAccessKey: >-
+      CiQzOTQyMWFiMi1kMTgzLTQ4MjItYmZiYy03NmY5NzU2OWI4MWIQ7eSpBBiZjdsMKhkABeaRglCArL1wiqDfmhdELfg7xSiEwh9JSgNuYTE
