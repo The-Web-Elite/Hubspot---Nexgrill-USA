@@ -10,3 +10,13 @@ portals:
         expiresAt: '2021-12-17T10:50:17.222Z'
     personalAccessKey: >-
       CiQzOTQyMWFiMi1kMTgzLTQ4MjItYmZiYy03NmY5NzU2OWI4MWIQ7eSpBBiZjdsMKhkABeaRglCArL1wiqDfmhdELfg7xSiEwh9JSgNuYTE
+  - name: sandbox
+    portalId: 25385250
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CJHVosDcLxIJAAkAAAAA4A0DGKKyjQwgmY3bDCju6QwyFNCQ6OoRSx5Qhuy_YcR-coJGoDhGOigAAABBAAAAeAAAAAAAAAAAAAAAAAAAAAAAAMAHAP7_MTwAAAYAAABgQhSLarcj0eVS5ViH_m8k8LwqburGzkoDZXUxUgBaAA
+        expiresAt: '2021-12-17T10:55:50.935Z'
+    personalAccessKey: >-
+      CiRldTEtNDIyZi1jMTE4LTQ4N2EtOTk5YS0xZjYyOTk2ODJkOGUQorKNDBiZjdsMKhkABeaRghruWXENGY07uwqbtxH7YB9NgDL0SgNldTE
