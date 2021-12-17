@@ -1,4 +1,4 @@
-defaultPortal: live
+defaultPortal: sandbox
 portals:
   - name: live
     portalId: 9073261
