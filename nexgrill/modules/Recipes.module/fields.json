@@ -1,0 +1,62 @@
+[ {
+  "id" : "9369d0e4-e1f1-2d72-55af-595f80677d04",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Recipes for the Rowdy"
+}, {
+  "id" : "204a4a1f-82a5-e5fc-e9fe-2eafae2b976c",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "View all recipes"
+}, {
+  "id" : "97668f8e-ed22-1b55-4bf7-5929bd3d5d05",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://nexgrill.com/blogs/recipes",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "70aabb89-4785-ac5d-5902-979b780ec129",
+  "name" : "recipes",
+  "display_width" : null,
+  "label" : "Recipes",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "display" : "text",
+  "min" : 1,
+  "max" : 50,
+  "step" : 1,
+  "type" : "number"
+} ]

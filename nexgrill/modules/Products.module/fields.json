@@ -1,0 +1,95 @@
+[ {
+  "id" : "9369d0e4-e1f1-2d72-55af-595f80677d04",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "7a27fcec-e66f-167f-b2db-0425585852a8",
+  "name" : "sub_title",
+  "display_width" : null,
+  "label" : "Sub title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "80aab07a-65a0-edd4-38ba-25ab8a6dde9e",
+  "name" : "background",
+  "display_width" : null,
+  "label" : "Background",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "a2b06f30-c409-29f3-c756-7fda23398416",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Background copy",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/9073261/logo%20(7).png",
+    "alt" : "logo (7)",
+    "loading" : "lazy",
+    "width" : 296,
+    "height" : 76,
+    "max_width" : 296,
+    "max_height" : 76
+  }
+}, {
+  "id" : "20b7a08d-c2c0-ff32-853e-10ef7b1d0022",
+  "name" : "crmobject_field",
+  "display_width" : null,
+  "label" : "CRM object",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "object_type" : "product",
+  "properties_to_fetch" : [ "ip__ecomm_bridge__ecomm_synced", "hs_sku", "hs_folder_id", "hs_url", "hs_images", "ip__shopify__images", "ip__ecomm_bridge__image_url", "name", "ip__shopify__published_scope", "ip__shopify__handle", "ip__shopify__tags", "hs_all_assigned_business_unit_ids" ],
+  "type" : "crmobject"
+}, {
+  "id" : "108048c4-74d2-309e-df3c-6c5aa5d95cd9",
+  "name" : "tag",
+  "display_width" : null,
+  "label" : "Tag",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "validation_regex" : "",
+  "placeholder" : "For...",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

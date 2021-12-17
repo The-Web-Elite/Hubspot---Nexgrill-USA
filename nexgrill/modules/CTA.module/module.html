@@ -1,0 +1,54 @@
+<section class="cta-section position-relative c-pt-9">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-6">
+                <div class="register-section__wrapper text-white text-center text-uppercase d-flex flex-column justify-content-center c-px-4 c-px-xl-8 {% if module.group_1.if_form %} register-section__wrapper--nobg{% endif %}" style="background-image: url('{{ module.group_1.background.src }}');">
+                    <div class="z-index-1 d-flex flex-column align-items-center">
+
+                        {% if module.group_1.if_form %}
+                            <div class="cta-section__icon-for-form d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.588" height="26" viewBox="0 0 16.588 26">
+                                    <path id="Path_88" data-name="Path 88" d="M1829.143,967.812a37.043,37.043,0,0,0-2.126-3.859c-.1-.178-.2-.36-.283-.546a4.372,4.372,0,0,1,0-4.523c.217-.38-.021-.419-.4-.319a3.638,3.638,0,0,0-1.568.813,3.424,3.424,0,0,0-1,2.491,4.523,4.523,0,0,0,.261,1.656c.218.624.435,1.158.624,1.686l.017.048c.08.225.154.449.221.68a9.514,9.514,0,0,1,.358,1.782,7.22,7.22,0,0,1-.186,2.465,3.382,3.382,0,0,1-.246.672c-.467.913-.968.579-.865-.15.069-.486.13-1.151.176-1.752a7.533,7.533,0,0,0-.753-3.986l-.022-.044a16.158,16.158,0,0,0-1.434-2.322,21,21,0,0,1-2.374-3.617h0a9.381,9.381,0,0,1-.514-4.715c.006-.1.027-.2-.124-.254-.346-.118-.717.341-.822.481a7.239,7.239,0,0,0-1.935,4.036c-.179,1.909.694,3.565,1.508,5.159a13.97,13.97,0,0,1,.955,2.17l.014.041a7.54,7.54,0,0,1,.323,2.316c-.01,2.082-.869,2.305-1.074,1.191a7.621,7.621,0,0,0-.4-1.335c-.129-.33-.27-.652-.425-.962l-.021-.039a6.675,6.675,0,0,0-1.63-2.147,4.473,4.473,0,0,0-1.322-.808,3.113,3.113,0,0,0-.4-.118c-.31-.069-.385-.066-.022.548a9.163,9.163,0,0,1,1.251,3.647,13.4,13.4,0,0,1-.014,2.928c-.015.159-.026.316-.035.474a7.717,7.717,0,0,0-.046.831,7.569,7.569,0,0,0,6.073,7.419l.028.005c.1.019.2.037.3.053s.22.032.332.044l.018,0h0q.2.022.4.033h.009c.135.007.272.011.41.011h0a7.537,7.537,0,0,0,4.907-1.812q.126-.107.247-.22l.019-.018a7.547,7.547,0,0,0,2.331-4.57c0-.013,0-.025.006-.039A9.987,9.987,0,0,0,1829.143,967.812Z" transform="translate(-1813.412 -954)" fill="#d7282f"/>
+                                </svg>  
+                            </div>
+                        {% endif %}
+
+
+                        <span class="register-section__sub-title position-relative font-secondary d-inline-block font-size-18 c-mt-3">{% inline_text field="group_1.subtitle" value="{{ module.group_1.subtitle }}" %}</span>
+                        <h3 class="font-size-31 font-weight-normal line-height-1-1 c-mt-2 c-pt-1">{% inline_text field="group_1.title" value="{{ module.group_1.title }}" %}</h3>
+
+                        <div class="c-mt-5">
+                            {% if not module.group_1.if_form %}
+                                <a class="crunch-button" href="{{ module.group_1.button.href }}">{% inline_text field="group_1.text_button" value="{{ module.group_1.text_button }}" %}</a>
+                            {% endif %}
+
+                            {% if module.group_1.if_form %}
+
+                                {% form
+                                    form_to_use="{{ module.group_1.form_field.form_id }}"
+                                    response_response_type="{{ module.group_1.form_field.response_type }}"
+                                    response_message="{{ module.group_1.form_field.message }}"
+                                    response_redirect_id="{{ module.group_1.form_field.redirect_id }}"
+                                    response_redirect_url="{{module.group_1.form_field.redirect_url}}"
+                                    gotowebinar_webinar_key="{{ module.group_1.form_field.gotowebinar_webinar_key }}"
+                                %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="register-section__wrapper bg-black text-white text-center d-flex flex-column justify-content-center text-uppercase c-px-4 c-px-xl-8" style="background-image: url('{{ module.group_2.background.src }}');">
+                    <div class="z-index-1">
+                        <span class="register-section__sub-title position-relative font-secondary d-inline-block font-size-18">{% inline_text field="group_2.subtitle" value="{{ module.group_2.subtitle }}" %}</span>
+                        <h3 class="font-size-31 font-weight-normal line-height-1-1 c-mt-2 c-pt-1">{% inline_text field="group_2.title" value="{{ module.group_2.title }}" %}</h3>
+    
+                        <div class="c-mt-5">
+                            <a class="crunch-button" href="{{ module.group_2.button.href }}">{% inline_text field="group_2.text_button_2" value="{{ module.group_2.text_button_2 }}" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>

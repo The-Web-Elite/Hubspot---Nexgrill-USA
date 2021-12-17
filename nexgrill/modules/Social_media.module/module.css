@@ -1,0 +1,44 @@
+.single-column--social-media {
+  padding-top: 130px; 
+}
+
+.single-column__container {
+  max-width: 848px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.social-media__heading {
+  font-size: 27px;
+  font-weight: 400;
+  color: #19322F;
+}
+
+.social-media__links {
+   list-style: none;
+  margin-top: 60px;
+}
+
+.social-media__links li {
+  display: inline-block; 
+  margin-right: 2px;
+}
+
+.social-media__links li a {
+  display: block; 
+}
+
+.social-media__content p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #76777A;
+  margin-top: 16px;
+  max-width: 776px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .single-column--social-media {
+    padding-top: 80px; 
+  }
+}

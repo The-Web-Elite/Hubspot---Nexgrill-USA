@@ -1,0 +1,19 @@
+<!--
+  templateType: search_results_page
+  isAvailableForNewContent: true
+  label: Boilerplate - search results
+  screenshotPath: ../../images/template-previews/search-results.png
+-->
+{% extends '../layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% module "module_160623920767916" path="/mowntn/modules/hero-global", label="hero-global" %}
+
+  <section>
+    <div class="container c-py-7">
+      {% module "module_160625293435723" path="/mowntn/modules/search_results", label="search_results" %}
+    </div>
+  </section>
+</main>
+{% endblock body %}

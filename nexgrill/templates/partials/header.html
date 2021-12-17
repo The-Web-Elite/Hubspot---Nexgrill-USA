@@ -1,0 +1,76 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+
+<nav class="navbar c-p-0">
+    <div class="container">
+        <div class="row w-100 no-gutters">
+            <div class="col-md-4 d-flex align-items-center">
+                <nav aria-label="Main menu" class="navbar-nav d-none d-md-flex flex-row position-relative align-items-center js-main-navigation-animation">
+
+                    {% menu "default" %}
+
+                </nav>
+            </div>
+            <div class="col-6 col-md-4 d-md-flex align-items-center justify-content-center">
+                <a href="https://nexgrill.com/" class="d-block" rel="home">
+                    <svg class="main-header__logo" x="0px" y="0px" viewBox="0 0 477 141.2">
+                        <rect x="82.8" y="88" width="53" height="17.1"></rect>
+                        <polygon fill="#1b322e" points="202,56.2 181,56.2 162.8,81.7 144.7,56.2 82.8,56.2 82.8,73.2 135.8,73.2 135.8,73.2 152.3,96.5 135.8,119.8 
+                        135.8,119.8 82.8,119.8 82.8,136.9 144.7,136.9 162.8,111.3 181,136.9 202,136.9 173.3,96.5 	"></polygon>
+                        <polygon fill="#1b322e" points="55.5,56.2 55.5,107.3 19.2,56.2 2.2,56.2 2.2,136.9 19.2,136.9 19.2,85.8 55.5,136.9 72.6,136.9 
+                        72.6,56.2 "></polygon>
+                        <rect x="329.9" y="73.2" width="17.1" height="63.7"></rect>
+                        <polygon fill="#1b322e"  points="374.3,119.8 374.3,56.2 357.2,56.2 357.2,136.9 410.8,136.9 410.8,119.8 "></polygon>
+                        <polygon fill="#1b322e" points="438.1,119.8 438.1,56.2 421.1,56.2 421.1,136.9 474.7,136.9 474.7,119.8 "></polygon>
+                        <path fill="#1b322e" d="M319.7,80.6L319.7,80.6c0-13.5-10.9-24.4-24.4-24.4h-60.6c-22.3,0-40.4,18.1-40.4,40.4v0c0,22.3,18.1,40.4,40.4,40.4l30.9,0
+                        v0l0,0V88h-33.4v17.1h16.3v14.8h-13.8c-12.9,0-23.3-10.4-23.3-23.3v0c0-12.9,10.4-23.3,23.3-23.3l60.6,0c4.1,0,7.4,3.3,7.4,7.4
+                        c0,4.1-3.3,7.4-7.4,7.4h-19.1v17.1h0l22.6,31.8h21L297,105C309.7,104.1,319.7,93.5,319.7,80.6z"></path>
+                        <path fill="#d8272d" class="nx-logosvg-flame" d="M349.7,34.6c-1.3-3-3.1-5.8-5-9c-0.2-0.4-0.5-0.8-0.7-1.3c-3.3-5.8,0-10.5,0-10.5c0.5-0.9,0-1-0.9-0.7
+                        c-1.5,0.4-2.7,1-3.7,1.9c-1.5,1.3-2.2,3.3-2.3,5.8c-0.1,1.3,0.2,2.7,0.6,3.9c0.5,1.5,1,2.7,1.5,3.9c0,0,0,0.1,0,0.1
+                        c0.2,0.5,0.4,1,0.5,1.6c0.4,1.4,0.7,2.8,0.8,4.2c0.2,1.9,0.1,3.8-0.4,5.7c-0.1,0.6-0.3,1.1-0.6,1.6c-1.1,2.1-2.3,1.3-2-0.3
+                        c0.2-1.1,0.3-2.7,0.4-4.1c0.3-3.6-0.4-6.5-1.8-9.3c0,0,0-0.1-0.1-0.1c-0.9-1.8-2-3.5-3.3-5.4c-1.9-2.6-4.2-5.3-5.5-8.4h0
+                        c-2.2-4.6-1.2-11-1.2-11c0-0.2,0.1-0.5-0.3-0.6c-0.8-0.3-1.7,0.8-1.9,1.1c-3,3.5-4.2,6.5-4.5,9.4c-0.4,4.4,1.6,8.3,3.5,12
+                        c0.9,1.8,1.7,3.3,2.2,5.1c0,0,0,0.1,0,0.1c0.5,1.6,0.8,3.3,0.8,5.4c0,4.8-2,5.4-2.5,2.8c-0.2-1-0.5-2.1-0.9-3.1
+                        c-0.3-0.8-0.6-1.5-1-2.2c0,0,0-0.1,0-0.1c-1-1.9-2.2-3.7-3.8-5c-0.9-0.8-1.9-1.5-3.1-1.9c-0.3-0.1-0.6-0.2-0.9-0.3
+                        c-0.7-0.2-0.9-0.2-0.1,1.3c1,1.7,2.5,4.8,2.9,8.5c0.3,2.6,0.2,4.8,0,6.8c0,0.4-0.1,0.7-0.1,1.1c-0.1,0.6-0.1,1.3-0.1,1.9
+                        c0,8.5,6.1,15.7,14.1,17.3c0,0,0,0,0.1,0c0.2,0,0.5,0.1,0.7,0.1c0.3,0,0.5,0.1,0.8,0.1c0,0,0,0,0,0c0,0,0,0,0,0
+                        c0.3,0,0.6,0.1,0.9,0.1c0,0,0,0,0,0c0.3,0,0.6,0,1,0c0,0,0,0,0,0c4.4,0,8.4-1.6,11.4-4.2c0.2-0.2,0.4-0.3,0.6-0.5c0,0,0,0,0,0
+                        c2.9-2.7,4.9-6.5,5.4-10.6c0,0,0-0.1,0-0.1C352.6,40.2,349.7,34.6,349.7,34.6z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 d-flex align-items-center justify-content-end">
+                <a href="https://nexgrill.com/search" class="navbar__icon hover-opacity-0-5 c-p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17.811" height="17.811" viewBox="0 0 17.811 17.811">
+                        <g id="Group_7" data-name="Group 7" transform="translate(-6.25 -6.25)">
+                          <path id="Path_65" data-name="Path 65" d="M7,13.667A6.667,6.667,0,1,0,13.667,7,6.667,6.667,0,0,0,7,13.667Z" fill="none" stroke="#19322f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                          <path id="Path_66" data-name="Path 66" d="M101.247,101.247l-4.619-4.619" transform="translate(-78.247 -78.247)" fill="none" stroke="#19322f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                        </g>
+                    </svg>                 
+                </a>
+                <a href="https://nexgrill.com/account/" class="navbar__icon hover-opacity-0-5 c-p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16.59" height="17.5" viewBox="0 0 16.59 17.5">
+                        <g id="Group_6" data-name="Group 6" transform="translate(-9.834 -6.25)">
+                          <path id="Path_63" data-name="Path 63" d="M38.5,11a4,4,0,1,0,4-4A4,4,0,0,0,38.5,11Z" transform="translate(-24.371)" fill="none" stroke="#19322f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                          <path id="Path_64" data-name="Path 64" d="M25.674,96.271a8,8,0,0,0-15.09,0Z" transform="translate(0 -73.271)" fill="none" stroke="#19322f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://nexgrill.com/cart" class="navbar__icon navbar__icon-cart c-ml-3 d-flex align-items-center justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16.613" height="17.5" viewBox="0 0 16.613 17.5">
+                        <g id="Group_9" data-name="Group 9" transform="translate(-9.75 -6.25)">
+                          <path id="Path_72" data-name="Path 72" d="M12.107,37.989h9.245l1.213-6.769H11.11a.612.612,0,0,0-.6.725l1,5.538A.612.612,0,0,0,12.107,37.989Z" transform="translate(0 -21.144)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                          <path id="Path_73" data-name="Path 73" d="M105.5,10.076l.512-2.583a.61.61,0,0,1,.6-.492h1.938" transform="translate(-82.939)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                          <path id="Path_74" data-name="Path 74" d="M41.514,84.518,41,87.1a.61.61,0,0,1-.6.494H33.6" transform="translate(-20.166 -67.673)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                          <path id="Path_75" data-name="Path 75" d="M34.86,126.483a.441.441,0,1,0,.441-.441A.441.441,0,0,0,34.86,126.483Z" transform="translate(-21.266 -103.924)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                          <path id="Path_76" data-name="Path 76" d="M78.05,126.483a.441.441,0,1,0,.441-.441A.441.441,0,0,0,78.05,126.483Z" transform="translate(-58.971 -103.924)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                        </g>
+                    </svg>                 
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>

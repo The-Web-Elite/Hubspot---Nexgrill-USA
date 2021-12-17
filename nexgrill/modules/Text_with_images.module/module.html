@@ -1,0 +1,42 @@
+<section class="text-section position-relative c-mt-9">
+    <div class="container">
+        <div class="row position-relative c-px-xl-6">
+            <div class="col">
+                {% if module.image_1.src %}
+                {% set sizeAttrs = 'width="{{ module.image_1.width }}" height="{{ module.image_1.height }}"' %}
+                {% if module.image_1.size_type == 'auto' %}
+                    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif module.image_1.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.image_1.max_width }}" height="{{ module.image_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                 {% set loadingAttr = module.image_1.loading != 'disabled' ? 'loading="{{ module.image_1.loading }}"' : '' %}
+                <img class="w-100" src="{{ module.image_1.src }}" alt="{{ module.image_1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+            
+            </div>
+        </div>
+        <div class="row position-relative no-gutters c-mt-5 c-px-xl-6">
+            <div class="col-md-6 col-xl-5">
+                <div class="c-pr-md-5 c-pr-xl-8">
+                    {% if module.image_2.src %}
+                    {% set sizeAttrs = 'width="{{ module.image_2.width }}" height="{{ module.image_2.height }}"' %}
+                    {% if module.image_2.size_type == 'auto' %}
+                        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                    {% elif module.image_2.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ module.image_2.max_width }}" height="{{ module.image_2.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.image_2.loading != 'disabled' ? 'loading="{{ module.image_2.loading }}"' : '' %}
+                    <img class="adjustable-element" src="{{ module.image_2.src }}" alt="{{ module.image_2.alt }}" {{ loadingAttr }} >
+                {% endif %}
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-7 c-mt-9 c-mt-md-0">
+                <div class="d-flex justify-content-center flex-column h-100">
+                    <h2 class="text-section__title font-size-42 text-dark2 font-weight-normal position-relative c-m-0 c-pt-3 line-height-1-2">{% inline_text field="title" value="{{ module.title }}" %}</h2>
+
+                    <div class="c-mt-xl-3 font-size-16 text-dark3">{% inline_rich_text field="content" value="{{ module.content }}" %}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

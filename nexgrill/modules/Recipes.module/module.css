@@ -1,0 +1,179 @@
+/*! CSS Used from: https://cdn.shopify.com/s/files/1/2197/2255/t/13/assets/screen.css?v=9832123082839366323 */
+*,:after,:before{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.recipes h5{color:#1b322e;line-height:1.1;font-family:Oregon,sans-serif;font-weight:400;}
+h5{font-size:1.5em;margin:0 0 .45em;}
+.recipes a{text-decoration:none;color:#d8272d;background-color:transparent;}
+a:active,a:hover{outline:0;}
+section{display:block;}
+hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;}
+.inner{width:90%;margin:0 auto;}
+.inner:after{clear:both;content:"";display:table;}
+.inner:before{content:"";display:table;}
+@media (min-width:1440px){
+.inner{width:88%;}
+}
+.nx-heading--mini{font-size:1.5em;}
+@media (min-width:1199px){
+.nx-heading--mini{font-size:1.7em;}
+}
+.nx-morebar{padding-top:.5em;padding-bottom:.5em;}
+.nx-morebar .inner{position:relative;}
+.nx-morebar--title{float:left;}
+.nx-morebar--title h5{margin:0;}
+.nx-morebar--dash{position:absolute;width:auto;margin-top:-1px;top:50%;left:45%;right:12em;}
+.nx-morebar--dash hr{display:block;margin:0;border:none;height:2px;background:#d8272d;}
+.nx-morebar--viewall{display:block;float:right;font-family:Oregon,sans-serif;padding-right:2px;}
+.nx-morebar--viewall a{color:#1b322e;position:relative;display:block;padding-right:2em;-webkit-transition:opacity .2s ease;-o-transition:opacity .2s ease;transition:opacity .2s ease;}
+.nx-morebar--viewall a:hover .nx-morebar--viewall-text{opacity:.6;}
+.nx-morebar--viewall .nx--viewall-icon{margin-top:.4em;}
+.nx-morebar--viewall-text{font-size:1.1em;display:inline-block;position:relative;-webkit-transition:opacity .2s ease;-o-transition:opacity .2s ease;transition:opacity .2s ease;}
+.nx--viewall-icon{display:block;position:absolute;top:-.1em;right:0;width:1.2em;height:1.2em;}
+.nx--viewall-icon span{display:block;position:absolute;width:.55em;height:.55em;background:#1b322e;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:-webkit-transform .35s cubic-bezier(.075, .82, .165, 1);transition:-webkit-transform .35s cubic-bezier(.075, .82, .165, 1);-o-transition:transform .35s cubic-bezier(.075, .82, .165, 1);transition:transform .35s cubic-bezier(.075, .82, .165, 1);transition:transform .35s cubic-bezier(.075, .82, .165, 1),-webkit-transform .35s cubic-bezier(.075, .82, .165, 1);}
+.nx--viewall-icon span:first-of-type{top:0;left:0;}
+.nx--viewall-icon span:nth-of-type(2){top:0;right:0;}
+.nx--viewall-icon span:nth-of-type(3){bottom:0;right:0;}
+.nx--viewall-icon span:nth-of-type(4){bottom:0;left:0;}
+[data-in-view=children]>*{opacity:0;-webkit-transform:translateY(30px);-ms-transform:translateY(30px);transform:translateY(30px);-webkit-transition:opacity .6s ease,-webkit-transform .6s cubic-bezier(.075, .82, .165, 1);transition:opacity .6s ease,-webkit-transform .6s cubic-bezier(.075, .82, .165, 1);-o-transition:opacity .6s ease,transform .6s cubic-bezier(.075, .82, .165, 1);transition:opacity .6s ease,transform .6s cubic-bezier(.075, .82, .165, 1);transition:opacity .6s ease,transform .6s cubic-bezier(.075, .82, .165, 1),-webkit-transform .6s cubic-bezier(.075, .82, .165, 1);}
+[data-in-view=children].is-in-view>*{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}
+[data-in-view=children].is-in-view>:nth-child(1n){-webkit-transition-delay:0.15s;-o-transition-delay:0.15s;transition-delay:0.15s;}
+[data-in-view=children].is-in-view>:nth-child(2n){-webkit-transition-delay:0.3s;-o-transition-delay:0.3s;transition-delay:0.3s;}
+[data-in-view=children].is-in-view>:nth-child(3n){-webkit-transition-delay:0.45s;-o-transition-delay:0.45s;transition-delay:0.45s;}
+/*! CSS Used from: https://cdn.shopify.com/s/files/1/2197/2255/t/13/assets/print.css?v=18248521118729543218 ; media=print */
+@media print{
+.nx-morebar{display:none;}
+}
+/*! CSS Used fontfaces */
+@font-face{font-family:Oregon;src:url("//cdn.shopify.com/s/files/1/2197/2255/t/2/assets/Oregon.eot?#iefix") format("embedded-opentype"),url("//cdn.shopify.com/s/files/1/2197/2255/t/2/assets/Oregon.otf") format("opentype"),url("//cdn.shopify.com/s/files/1/2197/2255/t/2/assets/Oregon.woff") format("woff"),url("//cdn.shopify.com/s/files/1/2197/2255/t/2/assets/Oregon.ttf") format("truetype"),url("//cdn.shopify.com/s/files/1/2197/2255/t/2/assets/Oregon.svg#Oregon") format("svg");font-weight:400;font-style:normal;}
+
+/*! CSS Used from: https://cdn.shopify.com/s/files/1/2197/2255/t/13/assets/screen.css?v=9832123082839366323 */
+*,:after,:before{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.recipes h3,.recipes h5{color:#1b322e;line-height:1.1;font-family:Oregon,sans-serif;font-weight:400;}
+h3{font-size:2.35em;margin:0 0 .35em;}
+h5{font-size:1.5em;margin:0 0 .45em;}
+.recipes a{text-decoration:none;color:#d8272d;background-color:transparent;}
+a:active,a:hover{outline:0;}
+figure,section{display:block;}
+figure{margin:0;}
+img{border:0;}
+figure{margin:0;}
+.inner{width:90%;margin:0 auto;}
+.inner:after{clear:both;content:"";display:table;}
+.inner:before{content:"";display:table;}
+@media (min-width:1440px){
+.inner{width:88%;}
+}
+.nx-recipe--numtag h5{display:inline-block;margin:0;position:relative;z-index:49;font-size:.9em;letter-spacing:.4em;}
+.nx-recipe--numtag-text{display:block;white-space:nowrap;}
+.nx-recipe--numtag-text span{display:inline-block;}
+.nx-recipe--numtag-dash{display:block;position:absolute;z-index:-1;top:50%;left:-2em;right:-2em;margin-top:-.5px;height:1px;background:#d8272d;}
+.nx-bloglist--ul{list-style:none;margin:0;padding:0;}
+.nx-bloglist--ul li{display:block;width:100%;margin-bottom:2em;}
+.nx-bloglist--imglink{background:#1b322e;display:block;overflow:hidden;}
+.nx-bloglist--imglink:hover figure{-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05);opacity:.75;}
+.nx-bloglist--imglink figure{position:relative;height:0;overflow:hidden;padding-bottom:65.31915%;-webkit-transition:opacity .35s linear,-webkit-transform .35s cubic-bezier(.075, .82, .165, 1);transition:opacity .35s linear,-webkit-transform .35s cubic-bezier(.075, .82, .165, 1);-o-transition:transform .35s cubic-bezier(.075, .82, .165, 1),opacity .35s linear;transition:transform .35s cubic-bezier(.075, .82, .165, 1),opacity .35s linear;transition:transform .35s cubic-bezier(.075, .82, .165, 1),opacity .35s linear,-webkit-transform .35s cubic-bezier(.075, .82, .165, 1);}
+.nx-bloglist--imglink img{display:block;position:absolute;top:0;left:0;width:100%;height:auto;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
+.nx-bloglist--info{padding:1.5em 0 1em;}
+.nx-bloglist--info h3{font-size:1.25em;}
+.nx-bloglist--info h3 a{color:#1b322e;-webkit-transition:opacity .25s ease;-o-transition:opacity .25s ease;transition:opacity .25s ease;}
+.nx-bloglist--info h3 a:hover{opacity:.6;}
+.nx-bloglist--info .nx-recipe--numtag-dash{left:-1em;right:-1em;}
+.nx-bloglist--tags{font-size:.9em;margin:0 0 .6em;color:#bfbfbf;}
+@media (min-width:580px){
+.nx-bloglist--ul li{width:48.5%;float:left;margin-right:3%;}
+.nx-bloglist--ul li:nth-child(even){margin-right:0;}
+}
+@media (min-width:992px){
+.nx-bloglist--ul li{width:32%;float:left;margin-right:2%;margin-bottom:3em;}
+.nx-bloglist--ul li:nth-child(even){margin-right:2%;}
+.nx-bloglist--ul li:nth-child(3n){margin-right:0;}
+}
+@media (min-width:1199px){
+.nx-bloglist--info{padding-right:8%;}
+.nx-bloglist--info h3{font-size:1.4em;}
+}
+@media (min-width:1440px){
+.nx-bloglist--ul li{margin-bottom:4em;}
+}
+.nx-morearticles{padding:2em 0;}
+@media (min-width:992px){
+.nx-morearticles{padding:3em 0;}
+}
+[data-in-view=children]>*{opacity:0;-webkit-transform:translateY(30px);-ms-transform:translateY(30px);transform:translateY(30px);-webkit-transition:opacity .6s ease,-webkit-transform .6s cubic-bezier(.075, .82, .165, 1);transition:opacity .6s ease,-webkit-transform .6s cubic-bezier(.075, .82, .165, 1);-o-transition:opacity .6s ease,transform .6s cubic-bezier(.075, .82, .165, 1);transition:opacity .6s ease,transform .6s cubic-bezier(.075, .82, .165, 1);transition:opacity .6s ease,transform .6s cubic-bezier(.075, .82, .165, 1),-webkit-transform .6s cubic-bezier(.075, .82, .165, 1);}
+[data-in-view=children].is-in-view>*{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}
+[data-in-view=children].is-in-view>:nth-child(1n){-webkit-transition-delay:0.15s;-o-transition-delay:0.15s;transition-delay:0.15s;}
+[data-in-view=children].is-in-view>:nth-child(2n){-webkit-transition-delay:0.3s;-o-transition-delay:0.3s;transition-delay:0.3s;}
+[data-in-view=children].is-in-view>:nth-child(3n){-webkit-transition-delay:0.45s;-o-transition-delay:0.45s;transition-delay:0.45s;}
+[data-in-view*=tagged] .nx-recipe--numtag-dash{-webkit-transform:scale(0,1);-ms-transform:scale(0,1);transform:scale(0,1);-webkit-transform-origin:left center;-ms-transform-origin:left center;transform-origin:left center;-webkit-transition:-webkit-transform 1s cubic-bezier(.785, .135, .15, .86) .2s;transition:-webkit-transform 1s cubic-bezier(.785, .135, .15, .86) .2s;-o-transition:transform 1s cubic-bezier(.785, .135, .15, .86) .2s;transition:transform 1s cubic-bezier(.785, .135, .15, .86) .2s;transition:transform 1s cubic-bezier(.785, .135, .15, .86) .2s,-webkit-transform 1s cubic-bezier(.785, .135, .15, .86) .2s;}
+[data-in-view*=tagged] .nx-recipe--numtag-text{opacity:0;-webkit-transition:opacity .6s ease;-o-transition:opacity .6s ease;transition:opacity .6s ease;}
+[data-in-view*=tagged].is-in-view .nx-recipe--numtag-dash{-webkit-transform:scale(1,1);-ms-transform:scale(1,1);transform:scale(1,1);}
+[data-in-view*=tagged].is-in-view .nx-recipe--numtag-text{opacity:1;}
+/*! CSS Used from: https://cdn.shopify.com/s/files/1/2197/2255/t/13/assets/print.css?v=18248521118729543218 ; media=print */
+@media print{
+.nx-morearticles{display:none;}
+}
+
+.recipes-heading {
+ padding-top: 150px; 
+}
+
+.recipes {
+   max-width: 1280px;
+   width: 80%;
+   margin: 0 auto;
+}
+
+.recipes .inner {
+   width: 100%;
+}
+
+.nx-morebar--viewall-text {
+ top: 4px; 
+}
+
+.nx-bloglist--ul h3 {
+  margin-top: 8px; 
+}
+
+.nx-bloglist--ul h5 {
+  margin-top: 16px; 
+}
+
+.nx-bloglist--ul .nx-bloglist--tags {
+  margin-top: 0; 
+}
+
+.recipes.nx-morearticles {
+  border-bottom: 4px solid #EAE8E8;
+  padding-bottom: 2.5em;
+}
+
+body .nx-morebar--viewall-text {
+  color: #19322F;
+}
+
+body .nx-bloglist--tags {
+  color: #BFBFBF;
+}
+
+@media only screen and (max-width: 1024px) {
+  .recipes {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .recipes-heading {
+    padding-top: 100px; 
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .nx-morebar--viewall {
+   margin-top: 16px;
+  }
+}
+
+
+
+/*! CSS Used fontfaces */
+@font-face{font-family:Oregon;src:url("//cdn.shopify.com/s/files/1/2197/2255/t/2/assets/Oregon.eot?#iefix") format("embedded-opentype"),url("//cdn.shopify.com/s/files/1/2197/2255/t/2/assets/Oregon.otf") format("opentype"),url("//cdn.shopify.com/s/files/1/2197/2255/t/2/assets/Oregon.woff") format("woff"),url("//cdn.shopify.com/s/files/1/2197/2255/t/2/assets/Oregon.ttf") format("truetype"),url("//cdn.shopify.com/s/files/1/2197/2255/t/2/assets/Oregon.svg#Oregon") format("svg");font-weight:400;font-style:normal;}

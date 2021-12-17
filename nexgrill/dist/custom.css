@@ -1,0 +1,74 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+#img1 {display:block !important;}
+#img2 {display:none !important;}
+
+@media only screen and (max-width: 976px) {
+.hero-form__top-margin {
+    margin-top: 20px;
+}
+  .hero-form__image-2 {
+    margin-top: 0rem !important;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+  
+    #img1 {display: none !important;}
+    #img2 {display: block !important;}
+  
+}
+
+
+@media only screen and (min-width: 977px) {
+  .hs-form-field.hs-fieldtype-select>label {
+  Background-color: #FFFFFF;
+  }
+  .hero-form__image-2 {
+    margin-top: -4rem !important;
+  }
+ 
+}
+
+div#hs_cos_wrapper_widget_1618496707627_ {
+    color: #1b322e;
+}
+
+ul.active-branch {
+    color: #1b322e;
+}
+
+span.footer_numbers {
+    font-size: .85em;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 1.1;
+    margin-bottom: .55em;
+    letter-spacing: .08em;
+}
+
+.hero-form__image-2 {
+    margin-bottom: -45px;
+}
+
+/* new contact page */
+.font-main {
+    font-family: 'Proxima Nova';
+}
+
+/* make labels over box */
+.hs-form-field.hs-fieldtype-text>label, .hs-form-field.hs-fieldtype-select>label, .hs-form-field.hs-fieldtype-date>label, .hs-form-field.hs-fieldtype-file>label {
+    position: absolute !important;
+    color: #19322f !important;
+    background-color: #fff !important;
+    padding: 0.2rem !important;
+    left: 10px !important;
+    top: -11px !important;
+}

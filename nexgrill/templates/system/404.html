@@ -1,0 +1,33 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: Boilerplate - 404 error
+  screenshotPath: ../../images/template-previews/404.png
+-->
+{% extends '../layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+
+<section class="hero-section hero-section--form-style bg-secondary overflow-hidden position-relative" style="min-height:auto" >
+  <div class="container">
+      <div class="hero-section__fade-image-wrapper position-absolute h-100">
+          <img src="{{ module.hero_image.src }}" alt="{{ module.hero_image.alt }}" class="hero-section__fade-image h-100">
+      </div>
+
+      <div class="row c-pt-9 c-pb-5 z-index-1 position-relative">
+        <div class="col-md-10 col-lg-8">
+            <h1 class="text-white c-mt-1">Page not found</h1>
+        </div>
+      </div>
+  </div>
+</section>
+
+  <section data-error="404" data-aos="fade-in">
+    <div class="container c-py-7">
+      <a class="button button--primary" href="/">Go Home</a>
+    </div>
+  </section>
+</main>
+
+{% endblock body %}

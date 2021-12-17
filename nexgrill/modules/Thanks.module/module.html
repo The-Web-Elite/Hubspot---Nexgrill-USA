@@ -1,0 +1,27 @@
+<section class="position-relative c-mt-9 c-mt-md-6 c-py-9">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2">
+                <div class="text-center">
+                    <span class="d-block font-size-20 text-gray font-secondary">{% inline_text field="subtitle" value="{{ module.subtitle }}" %}</span>
+                    <h2 class="register-section__title register-section__title--center font-size-70 text-dark2 font-weight-normal position-relative c-m-0 c-pt-3 line-height-1-1">{% inline_text field="title" value="{{ module.title }}" %}</h2>
+
+                    <span class="d-block c-mt-7 text-dark3 c-px-xl-5 line-height-1-8 font-size-18">{% inline_text field="text_field" value="{{ module.text_field }}" %}</span>
+                    <span class="d-block c-mt-6 text-dark3 c-px-xl-5 line-height-1-8 font-size-18">{% inline_text field="text2" value="{{ module.text2 }}" %}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container c-mt-9 c-pt-9">
+        <div class="text-section__thanks-wr text-center text-white d-flex flex-column justify-content-center c-py-5">
+            <div>
+                <span class="register-section__sub-title position-relative font-secondary d-inline-block font-size-18 c-mt-3">{% inline_text field="share_group.subtitle_share" value="{{ module.share_group.subtitle_share }}" %}</span>
+                <h3 class="font-size-42 font-weight-normal line-height-1-1 c-mt-4 c-mt-md-1 c-pt-1 c-px-4">{% inline_text field="share_group.title_share" value="{{ module.share_group.title_share }}" %}</h3>
+
+                <a class="crunch-button crunch-button--red c-mt-6" href="https://invited.nexgrill.com/register" target="_blank">
+                    {% inline_text field="share_group.button_name" value="{{ module.share_group.button_name }}" %}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

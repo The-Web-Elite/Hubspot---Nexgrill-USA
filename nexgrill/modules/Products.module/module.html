@@ -1,0 +1,140 @@
+<div id="shopify-section-home-product-feature" class="shopify-section">
+
+
+
+
+
+
+
+<section class="nx-productpromo ">
+  <div class="inner">
+    
+    <div class="nx-headings--std nx-headings--centered nx-productpromo--headings">
+      <div class="inner--md is-in-view" data-in-view="children">
+        <h5 class="products-preheading nx-heading--sm">{{ module.sub_title }}</h5>
+        <h1 class="products-heading nx-heading--lg">{{ module.title }}</h1>
+      </div>
+      <div class="nx-heading--divide is-in-view" data-in-view="divider"><hr></div>
+    </div>
+
+    <div class="nx-grillsline--list nx-productpromo--list">
+      <ul class="nx-productlist is-in-view" data-in-view="children">
+      
+      
+      
+
+      
+ {% set products = module.crmobject_field %}
+
+{% set i = 0 %}
+{% for product in products %}
+	
+  
+  <li data-productlist-item="" data-datecreated="20201222">
+  <div class="nx-productlist--item">
+
+    <div class="nx-productlist--img">
+      <a href="https://nexgrill.com/products/{{ product.properties.ip__shopify__handle }}" class="nx-productlist--link">
+        <span class="sr-only">View Product</span>
+      </a>
+
+      <div class="nx-productlist--defaultimg">
+        <figure>
+          <img class="nx--lazyload is-lazyloaded" data-src="{{ product.properties.ip__shopify__images }}" alt="{{ product.properties.name }}" width="480" height="480" src="{{ product.properties.ip__shopify__images }}">
+        </figure>
+      </div>
+
+      
+      <div class="nx-productlist--openimg">
+        <figure>
+          <img class="nx--lazyload is-lazyloaded" data-src="//cdn.shopify.com/s/files/1/2197/2255/products/720-0896x_angled.png?v=1627931046" alt="DEluxe 6-Burner Gas Grill w/ Ceramic Searing Side Burner and Rotisserie Kit" width="480" height="480" src="//cdn.shopify.com/s/files/1/2197/2255/products/720-0896x_angled.png?v=1627931046">
+        </figure>
+      </div>
+      
+
+      <span class="nx-productlist--stroke">
+        <span class="stroke--top-left"></span>
+        <span class="stroke--top-right"></span>
+        <span class="stroke--left stroke--side"></span>
+        <span class="stroke--right stroke--side"></span>
+      </span>
+      <div class="nx-productlist--btn">
+        <button><span>View Details</span></button>
+      </div>
+    </div>
+
+    <div class="nx-productlist--info is-in-view" data-in-view="children">
+      
+      <p class="nx-productlist--model">{{ module.tag[i] }}</p>
+      
+      <h4>
+        <a href="https://nexgrill.com/products/{{ product.properties.ip__shopify__handle }}">{{ product.properties.name }}</a>
+      </h4>
+
+      
+      
+      
+
+      <!-- Yotpo Star Ratings Empty stars -->
+      <div class="yotpo bottomLine yotpo-small" data-product-id="4730232897584" data-yotpo-element-id="1"> <div class="yotpo-display-wrapper" style="visibility: hidden;">  <div class="standalone-bottomline" data-source="default" tabindex="-1"> <div class="yotpo-bottomline pull-left  star-clickable" tabindex="0">  <span class="yotpo-stars"> <span class="yotpo-icon yotpo-icon-star rating-star pull-left"></span><span class="yotpo-icon yotpo-icon-star rating-star pull-left"></span><span class="yotpo-icon yotpo-icon-star rating-star pull-left"></span><span class="yotpo-icon yotpo-icon-star rating-star pull-left"></span><span class="yotpo-icon yotpo-icon-empty-star rating-star pull-left"></span><span class="sr-only">4.2 star rating</span> </span>  <a href="javascript:void(0)" class="text-m" aria-label="6 reviews">6 Reviews</a>   <div class="yotpo-clr"></div> </div> <div class="yotpo-clr"></div> </div>   <div class="yotpo-clr"></div> </div></div>
+      <style>
+        .yotpo .pull-left {
+          text-align: center !important;
+          float: none !important;
+        }
+      </style>
+
+
+      <!-- Yotpo Star Ratings Star not showing with 0 reviews
+<div class="yotpo bottomLine"
+  data-product-id="4730232897584">
+
+
+
+
+
+
+
+</div>
+      <style>
+div.yotpo.bottomLine .pull-left {
+    float: none;
+    text-align: center;
+}
+
+.yotpo a.text-m {
+    display: inline-block;
+}
+</style> -->
+
+    </div>
+
+  </div>
+</li>
+  
+  {% set i = i + 1 %}
+{% endfor %}
+    
+        
+        
+          
+
+          
+
+         
+      
+      </ul>
+    </div>
+    
+
+    <div class="nx-productpromo--viewall is-in-view" data-in-view="children">
+    
+      <a href="https://nexgrill.com/collections/grills" class="nx-btn nx-btn--primary">Shop All Grills</a>
+    
+    
+    </div>
+
+  </div>
+</section>
+
+</div>

@@ -1,0 +1,63 @@
+<section class="hero-form position-relative c-mt-2 c-mt-md-0">
+    <div class="container">
+        <div class="row position-relative c-px-xl-6">
+            <div class="hero-form__top-margin col-lg-5 order-2 order-lg-1">
+                <span class="d-block font-size-20 text-gray font-secondary">{% inline_text field="subtitle" value="{{ module.subtitle }}" %}</span>
+                <h2 class="font-size-56 text-dark2 font-weight-normal position-relative c-m-0 c-pt-3 line-height-1-1">{% inline_text field="title" value="{{ module.title }}" %}</h2>
+
+                <span class="position-relative hero-form__content d-block font-size-16 text-dark3 c-mt-4 line-height-1-8 c-pr-xl-8">{% inline_text field="description" value="{{ module.description }}" %}</span>
+
+                <div class="row form-secondary c-mt-9 c-mt-lg-5">
+                    <div class="col-xl-8">
+                        <h3 class="font-weight-normal">{% inline_text field="title_form" value="{{ module.title_form }}" %}</h3>
+                        {% form
+                            form_to_use="{{ module.form_field.form_id }}"
+                            response_response_type="{{ module.form_field.response_type }}"
+                            response_message="{{ module.form_field.message }}"
+                            response_redirect_id="{{ module.form_field.redirect_id }}"
+                            response_redirect_url="{{module.form_field.redirect_url}}"
+                            gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+                        %}
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 offset-lg-1 order-1 order-lg-2">
+                <div class="w-100 d-md-flex justify-content-center justify-content-lg-end">
+                    {% if module.image_1.src %}
+                    {% set loadingAttr = module.image_1.loading != 'disabled' ? 'loading="{{ module.image_1.loading }}"' : '' %}
+                    <img id="img1" class="d-block adjustable-element" src="{{ module.image_1.src }}" alt="{{ module.image_1.alt }}" {{ loadingAttr }}>
+                  <img id="img2" class="d-block adjustable-element" src="https://f.hubspotusercontent10.net/hubfs/9073261/DSC_7498.jpeg" >
+                {% endif %}
+                </div>
+
+
+                <div class="hero-form__image-logo justify-content-end c-mt-xl-10 c-pt-xl-10 c-pr-xl-6 d-none position-relative">
+                    {% if module.image_logo.src %}
+                    {% set sizeAttrs = 'width="{{ module.image_logo.width }}" height="{{ module.image_logo.height }}"' %}
+                    {% if module.image_logo.size_type == 'auto' %}
+                        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                    {% elif module.image_logo.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ module.image_logo.max_width }}" height="{{ module.image_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.image_logo.loading != 'disabled' ? 'loading="{{ module.image_logo.loading }}"' : '' %}
+                    <img src="{{ module.image_logo.src }}" alt="{{ module.image_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+                <div class="hero-form__image-2 z-index-1">
+                    {% if module.image_2.src %}
+                        {% set sizeAttrs = 'width="{{ module.image_2.width }}" height="{{ module.image_2.height }}"' %}
+                        {% if module.image_2.size_type == 'auto' %}
+                            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                        {% elif module.image_2.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ module.image_2.max_width }}" height="{{ module.image_2.max_height }}" style="max-width: 100%; height: auto;"' %}
+                        {% endif %}
+                        {% set loadingAttr = module.image_2.loading != 'disabled' ? 'loading="{{ module.image_2.loading }}"' : '' %}
+                        <img src="{{ module.image_2.src }}" alt="{{ module.image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                </div>
+    </div>
+
+</section>

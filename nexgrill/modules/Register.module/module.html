@@ -1,0 +1,44 @@
+<section class="register-section position-relative c-mt-6 c-py-9">
+    <div class="container">
+        <div class="row c-px-xl-7">
+            <div class="col-md-6">
+                <div class="">
+                    <span class="d-block font-size-20 text-gray font-secondary">{% inline_text field="subtitle" value="{{ module.subtitle }}" %}</span>
+                    <h2 class="register-section__title font-size-70 text-dark2 font-weight-normal position-relative c-m-0 c-pt-3 line-height-1-1">{% inline_text field="title" value="{{ module.title }}" %}</h2>
+                </div>
+
+                <div class="c-mt-7 c-mt-xl-9">
+                    {% if module.image_field.src %}
+                    {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+                    {% if module.image_field.size_type == 'auto' %}
+                        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                    {% elif module.image_field.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+                    <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="c-pl-md-7">
+                    <div class="c-pt-6 font-main">
+                        <span class="font-size-18 text-dark3 line-height-1-8">{% inline_text field="description" value="{{ module.description }}" %}</span>
+                    </div>
+
+                    <div class="form-secondary">
+                        {% form
+                            form_to_use="{{ module.form_field.form_id }}"
+                            response_response_type="{{ module.form_field.response_type }}"
+                            response_message="{{ module.form_field.message }}"
+                            response_redirect_id="{{ module.form_field.redirect_id }}"
+                            response_redirect_url="{{module.form_field.redirect_url}}"
+                            gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+                        %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+<section class="newsletter position-relative c-mt-6 c-py-9" style="background-image: url('{{ module.image_field.src }}');">
+       
+                <div class="">
+                    <span class="newsletter__preheading"><span>{{ module.subtitle }}</span></span>
+                    <h2 class="newsletter__heading">{% inline_text field="title" value="{{ module.title }}" %}</h2>
+                     <p class="newsletter__p">
+                      {{ module.description }}
+                  </p>              
+  </div>
+
+     
+
+   
+            
+  <div>
+                        {% form
+                            form_to_use="{{ module.form_field.form_id }}"
+                            response_response_type="{{ module.form_field.response_type }}"
+                            response_message="{{ module.form_field.message }}"
+                            response_redirect_id="{{ module.form_field.redirect_id }}"
+                            response_redirect_url="{{module.form_field.redirect_url}}"
+                            gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+                        %}
+                    </div>
+  
+</section>

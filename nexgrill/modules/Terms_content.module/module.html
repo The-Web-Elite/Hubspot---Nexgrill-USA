@@ -1,0 +1,12 @@
+<section class="text-section position-relative c-mt-5">
+    <div class="container">
+        <div class="row c-px-xl-6">
+            <div class="col">
+                <h3 class="font-size-26 text-center font-weight-normal">{% inline_text field="title" value="{{ module.title }}" %}</h3>
+                <div class="text-section__terms text-dark3 font-size-12 c-mt-4">
+                    {% inline_rich_text field="richtext_field" value="{{ module.richtext_field }}" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

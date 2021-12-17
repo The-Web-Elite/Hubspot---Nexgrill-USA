@@ -1,0 +1,21 @@
+<section class="hero-section bg-secondary position-relative c-mt-4 c-mt-md-0">
+    <div class="container">
+        <div class="hero-section__wrapper position-relative text-center" style="background-image: url({{ module.background.src }});">
+            <div class="hero-section__content position-absolute d-flex justify-content-center flex-column z-index-2">
+                <span class="d-block text-white font-size-20 font-secondary text-uppercase">{% inline_text field="sub_title" value="{{ module.sub_title }}" %}</span>
+                <h1 class="text-white font-size-69 font-weight-normal c-m-0 c-pt-3">{% inline_text field="title" value="{{ module.title }}" %}</h1>
+            </div>
+
+            {% if module.background.src %}
+                {% set sizeAttrs = 'width="{{ module.background.width }}" height="{{ module.background.height }}"' %}
+                {% if module.background.size_type == 'auto' %}
+                    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif module.background.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.background.max_width }}" height="{{ module.background.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.background.loading != 'disabled' ? 'loading="{{ module.background.loading }}"' : '' %}
+                <img class="d-none d-md-block" src="{{ module.background.src }}" alt="{{ module.background.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+        </div>
+    </div>
+</section>

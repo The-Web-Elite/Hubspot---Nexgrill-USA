@@ -1,0 +1,99 @@
+[ {
+  "id" : "d56e7041-d969-4a42-2bdb-2d38b8ec670a",
+  "name" : "magnetic_url",
+  "display_width" : null,
+  "label" : "Magnetic url",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "653b2b32-f0d0-c51c-2710-793023c2935e",
+  "name" : "url_facebook",
+  "display_width" : null,
+  "label" : "Facebook",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "2d4b0de9-64f5-d750-0f3a-786d5d177e64",
+  "name" : "url_twitter",
+  "display_width" : null,
+  "label" : "Twitter",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "72976f68-22ed-34c6-7412-64027fee1098",
+  "name" : "rul_instagram",
+  "display_width" : null,
+  "label" : "Instagram",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "a60b2cb7-e226-b798-f1a9-3302785fe539",
+  "name" : "url_youtube",
+  "display_width" : null,
+  "label" : "Youtube",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "5833ae3d-df7b-0beb-394c-0039799d9c1d",
+  "name" : "url_pinterest",
+  "display_width" : null,
+  "label" : "Pinterest",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "41a3f3d5-1574-9562-e7b7-da1fbf17eee1",
+  "name" : "url_linkedin",
+  "display_width" : null,
+  "label" : "Linkedin",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+} ]

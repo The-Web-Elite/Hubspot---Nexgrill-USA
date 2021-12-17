@@ -1,0 +1,187 @@
+.newsletter {
+   max-width: 1280px;
+   width: 90%;
+   margin: 0 auto;
+   background-size: cover;
+   background-position: center;
+  text-align: center;
+  padding: 95px 20px 60px 20px;
+  margin-top: 150px;
+}
+
+.newsletter__preheading {
+  font-size: 20px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+  font-family: "Oregon";
+  padding: 0 12px;
+  position: relative;
+}
+
+.newsletter__preheading span {
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter__preheading:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 14px;
+  background-color: #D7282F;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  z-index: 1;
+}
+
+.newsletter__heading {
+   font-size: 69px;
+   line-height: 1.1;
+   letter-spacing: 0.21px;
+   color: #FFFFFF;
+  font-weight: 400;
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.newsletter__p {
+   font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  letter-spacing: 0px;
+  font-weight: bold;
+  max-width: 592px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.newsletter form {
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.newsletter .field {
+  text-align: left; 
+}
+
+.newsletter form input {
+  border-width: 0 !important;
+  border-bottom: 1px solid #FFFFFF !important;
+  font-family: "Oregon";
+  letter-spacing: -0.1px;
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+  opacity: 0.6;
+  padding-left: 0 !important;
+  font-size: 20px !important;
+}
+
+.newsletter label:not(.hs-error-msg) {
+   display: none;
+}
+
+.newsletter .actions {
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    background-color: transparent;
+    border-bottom-width: 0 !important;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+    opacity: 1;
+    font-size: 0;
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.newsletter .hs-button {
+  background-image: url('https://f.hubspotusercontent10.net/hubfs/9073261/arrow-right.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  background-color: transparent;
+  border-bottom-width: 0 !important;
+  width: 30px;
+  height: 20px;
+  padding: 0;
+  opacity: 1;
+}
+
+.cta-section .hs-form {
+  position: relative; 
+}
+
+.cta-section .hs-button {
+     background-image: url(https://f.hubspotusercontent10.net/hubfs/9073261/arrow-right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    background-color: transparent;
+    border-bottom-width: 0 !important;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+    opacity: 1;
+    font-size: 0;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+.cta-section .actions {
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    background-color: transparent;
+    border-bottom-width: 0 !important;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+    opacity: 1;
+    font-size: 0;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cta-section .actions:hover input.hs-button, .newsletter .actions:hover input.hs-button {
+    animation: submitarr .5s cubic-bezier(.075,.82,.165,1) 1;
+}
+
+.cta-section .hs-form .hs-form-field input {
+    padding-left: 0;
+}
+
+.newsletter .hs-error-msg {
+  position: absolute;
+  bottom: -22px;
+}
+
+.newsletter .hs-form-field {
+  margin-top: 33px; 
+}
+
+@media only screen and (max-width: 768px) {
+  .newsletter__heading {
+    font-size: 52px;
+  }
+  
+  .newsletter {
+    margin-top: 100px; 
+  }
+}

@@ -1,0 +1,22 @@
+<!--
+
+  isAvailableForNewContent: true
+  label: Contact
+  screenshotPath: ../images/template-previews/home.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {# All templates are recommended to have an h1 present for both accessibility and SEO best practice. This should be at the top of the template before any other textual content. The h1 element below is within a dnd area to allow content editors the ability to adjust the content and alignment of the text. #}
+
+
+  ELUWINA 
+
+
+
+  {% dnd_area 'dnd_area' class='body-container body-container--home', label='Main section' %}
+    
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

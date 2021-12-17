@@ -1,0 +1,113 @@
+[ {
+  "id" : "9bb07643-f70a-95cf-2c1a-301282816376",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "dfbb5569-b570-edf0-8359-6d15202afc72",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "4432c851-7d80-d090-5486-7d1d1e272afe",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "5a3b704f-3d18-d292-6b14-2e26ca851c3c",
+  "name" : "title_form",
+  "display_width" : null,
+  "label" : "Title form",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "32420c64-f77c-51da-d766-2dc7468d62bf",
+  "name" : "image_1",
+  "display_width" : null,
+  "label" : "Image 1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "536f0772-19f4-0645-6a5d-45585e1d38bc",
+  "name" : "image_2",
+  "display_width" : null,
+  "label" : "Image 2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "396f84cb-6974-9d57-805b-d5d30d944c2f",
+  "name" : "image_logo",
+  "display_width" : null,
+  "label" : "Image logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "29ec93bc-d4f3-2680-2cbd-b75c2805bffa",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "3509f5ca-67c8-4597-8bf8-20c650e7412c",
+    "response_type" : "redirect",
+    "message" : "Thanks for submitting the form.",
+    "redirect_id" : 45161075988,
+    "redirect_url" : null,
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+} ]

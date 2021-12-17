@@ -1,0 +1,124 @@
+<!--
+  templateType: blog
+  isAvailableForNewContent: true
+  label: Boilerplate - blog post
+  screenshotPath: ../images/template-previews/blog-post.png
+-->
+{% extends './layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper blog-post">
+
+    {% module "module_160623920767916" path="/mowntn/modules/hero-global", label="hero-global" %}
+
+    {% module "module_16064343290955" path="/mowntn/modules/breadcrumbs", label="breadcrumbs" %}
+
+    <div class="container c-mt-9 c-mt-md-0">
+      <div class="row c-pt-5 c-pt-md-0">
+        <div class="col-lg-4 c-pt-xl-3">
+          <div class="c-mt-lg-8 c-mt-md-9">
+            <div class="position-relative bg-gray text-center">
+              <img src="{{ content.blog_post_author.avatar }}" alt="Avatar {{ content.blog_post_author.display_name }}" class="blog-post__avatar">
+              <span class="d-block font-primary font-size-24 font-weight-bold c-mt-5">
+                Author: <span class="text-red">{{ content.blog_post_author.display_name }}</span>
+                <span class="d-block font-size-18 font-weight-light c-mt-1">{{ content.blog_post_author.bio }}</span>
+              </span>
+              
+              <div class="blog-post__social-wrapper d-flex justify-content-between align-items-center mx-auto c-py-5 c-px-5 c-px-xl-7">
+                <a class="hover-opacity-0-75" href="{{ content.blog_post_author.facebook }}" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                    <image id="icon" width="30" height="30" xlink:href="data:image/png;base64,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gnUJws/eVIoZU8Xfnfo9+8+xl6wjWAPh3dcllEunEKwojbluFzOVYnxni+G879n2sbt+CFZkhB8fnJ1MlyfSQz/sqjfba7ut9det1e1j61MIVrSV8qnyxLDF612k1naPfQgewRraeN24np6dTN+4no7cF8DWd1uvaq1qLVjbbRlJIVixU55MF8ZSpXzqRj5dup4aqPFXtRZs7wXVWlCttV69CRSKAeG5k0uz9rqVSLQSWx8kbHwkWcqnwy/0jI8kez0Q22kEO3vt/zbb1VpQb7arb1rbjbY8YYTFheaSX2R/++DYu/+/kEsWT70j+arWqjc/ylOQSCTCQjmwGGHRkwnar39puwCx5vkSQLAABAsQLADBAhAsQLAABAtAsADBAhAsAMECBAtAsAAECxAsAMECECxAsAAEC0CwAMECECwAwQIEC0CwAAQLECwAwQIEyyEABAtAsADBAhAsAMECBAtAsAAECxAsAMECECxAsAAEC0CwAMECECwAwQIEC0CwAAQLECwAwQIQLECwAAQLQLAAwQIQLECwAAQLQLAAwQIQLADBAgQLQLAABAsQLADBAhAsQLAABAtAsADBAhAsAMECBAtAsAAECxAsAMECECxAsAAEC0CwAMECECxAsAAEC0CwAMECECwAwQIEC0CwAAQLECyAAfL/ZA8PQkEwO44AAAAASUVORK5CYII="/>
+                  </svg>
+                </a>
+
+                <a class="hover-opacity-0-75" href="{{ content.blog_post_author.facebook }}" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35.207" height="29.979" viewBox="0 0 35.207 29.979">
+                  <g id="icon" transform="translate(0.001 0)">
+                    <path id="Path_2525" data-name="Path 2525" d="M1163.785,273.11a.551.551,0,0,0,.556-.583c0-.414-.25-.611-.761-.611h-.827v2.165h.311v-.944h.382l.009.011.593.932h.333l-.638-.965Zm-.36-.217h-.361v-.732h.457c.236,0,.505.039.505.348,0,.356-.272.384-.6.384" transform="translate(-1130.307 -245.032)" fill="#0a66c2"/>
+                    <path id="Path_2520" data-name="Path 2520" d="M929.14,82.72h-4.411V75.812c0-1.647-.029-3.768-2.294-3.768-2.3,0-2.649,1.795-2.649,3.648v7.027h-4.411V68.514h4.235v1.941h.059a4.641,4.641,0,0,1,4.178-2.295c4.471,0,5.3,2.941,5.3,6.766ZM910.4,66.572a2.56,2.56,0,1,1,2.559-2.56,2.56,2.56,0,0,1-2.559,2.56M912.6,82.72h-4.416V68.514H912.6Zm18.736-25.363H905.972a2.172,2.172,0,0,0-2.2,2.146V84.975a2.174,2.174,0,0,0,2.2,2.148h25.368a2.178,2.178,0,0,0,2.205-2.148V59.5a2.177,2.177,0,0,0-2.206-2.146" transform="translate(-903.776 -57.355)" fill="#0a66c2"/>
+                    <path id="Path_2526" data-name="Path 2526" d="M1154.16,264.22a2.03,2.03,0,1,0,.039,0h-.039m0,3.827a1.78,1.78,0,1,1,1.75-1.809v.03a1.742,1.742,0,0,1-1.7,1.779h-.046" transform="translate(-1121.003 -238.301)" fill="#0a66c2"/>
+                  </g>
+                  </svg>
+                </a>
+
+                <a class="hover-opacity-0-75" href="{{ content.blog_post_author.facebook }}" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.656" height="29.648" viewBox="0 0 29.656 29.648">
+                    <defs>
+                      <radialGradient id="radial-gradient" cx="1.218" cy="4.447" r="0.5" gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
+                        <stop offset="0" stop-color="#fd5"/>
+                        <stop offset="0.1" stop-color="#fd5"/>
+                        <stop offset="0.5" stop-color="#ff543e"/>
+                        <stop offset="1" stop-color="#c837ab"/>
+                      </radialGradient>
+                      <radialGradient id="radial-gradient-2" cx="1.136" cy="3.642" r="0.5" gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
+                        <stop offset="0" stop-color="#3771c8"/>
+                        <stop offset="0.128" stop-color="#3771c8"/>
+                        <stop offset="1" stop-color="#60f" stop-opacity="0"/>
+                      </radialGradient>
+                    </defs>
+                    <g id="logo" transform="translate(-1.001 -1)">
+                      <path id="Path_209" data-name="Path 209" d="M14.829,0c-6.191,0-8,.006-8.353.036A7.357,7.357,0,0,0,3.554.77a5.919,5.919,0,0,0-1.7,1.247A6.363,6.363,0,0,0,.133,5.624,26.76,26.76,0,0,0,0,10c0,1.181,0,2.734,0,4.818C0,21,0,22.812.034,23.164a7.448,7.448,0,0,0,.707,2.865A6.247,6.247,0,0,0,4.79,29.336a10.52,10.52,0,0,0,2.153.285c.367.016,4.11.027,7.855.027s7.49,0,7.848-.023a10.131,10.131,0,0,0,2.231-.292,6.209,6.209,0,0,0,4.048-3.314,7.326,7.326,0,0,0,.7-2.809c.02-.255.029-4.328.029-8.4s-.009-8.133-.029-8.389a7.243,7.243,0,0,0-.713-2.837,5.877,5.877,0,0,0-1.269-1.739A6.4,6.4,0,0,0,24.031.136,26.722,26.722,0,0,0,19.656,0Z" transform="translate(1.004 1)" fill="url(#radial-gradient)"/>
+                      <path id="Path_210" data-name="Path 210" d="M14.829,0c-6.191,0-8,.006-8.353.036A7.357,7.357,0,0,0,3.554.77a5.919,5.919,0,0,0-1.7,1.247A6.363,6.363,0,0,0,.133,5.624,26.76,26.76,0,0,0,0,10c0,1.181,0,2.734,0,4.818C0,21,0,22.812.034,23.164a7.448,7.448,0,0,0,.707,2.865A6.247,6.247,0,0,0,4.79,29.336a10.52,10.52,0,0,0,2.153.285c.367.016,4.11.027,7.855.027s7.49,0,7.848-.023a10.131,10.131,0,0,0,2.231-.292,6.209,6.209,0,0,0,4.048-3.314,7.326,7.326,0,0,0,.7-2.809c.02-.255.029-4.328.029-8.4s-.009-8.133-.029-8.389a7.243,7.243,0,0,0-.713-2.837,5.877,5.877,0,0,0-1.269-1.739A6.4,6.4,0,0,0,24.031.136,26.722,26.722,0,0,0,19.656,0Z" transform="translate(1.004 1)" fill="url(#radial-gradient-2)"/>
+                      <path id="Path_211" data-name="Path 211" d="M28.949,18c-2.973,0-3.346.013-4.514.066a8.034,8.034,0,0,0-2.657.509,5.6,5.6,0,0,0-3.2,3.2,8,8,0,0,0-.509,2.657C18.014,25.6,18,25.975,18,28.948s.013,3.345.066,4.513a8.046,8.046,0,0,0,.509,2.657,5.6,5.6,0,0,0,3.2,3.2,8.041,8.041,0,0,0,2.658.509c1.168.053,1.541.066,4.514.066s3.346-.013,4.513-.066a8.046,8.046,0,0,0,2.659-.509,5.609,5.609,0,0,0,3.2-3.2,8.115,8.115,0,0,0,.509-2.657c.052-1.168.066-1.54.066-4.513s-.014-3.346-.066-4.514a8.111,8.111,0,0,0-.509-2.657,5.6,5.6,0,0,0-3.2-3.2,8.059,8.059,0,0,0-2.659-.509C32.291,18.013,31.92,18,28.945,18Zm-.982,1.973h.982c2.923,0,3.27.01,4.424.063a6.061,6.061,0,0,1,2.033.377,3.628,3.628,0,0,1,2.077,2.078,6.049,6.049,0,0,1,.377,2.032c.052,1.154.064,1.5.064,4.423s-.011,3.268-.064,4.423a6.055,6.055,0,0,1-.377,2.032,3.63,3.63,0,0,1-2.077,2.076,6.039,6.039,0,0,1-2.033.377c-1.154.052-1.5.064-4.424.064s-3.27-.011-4.424-.064a6.073,6.073,0,0,1-2.033-.377A3.627,3.627,0,0,1,20.414,35.4a6.049,6.049,0,0,1-.377-2.032c-.052-1.154-.063-1.5-.063-4.424s.01-3.268.063-4.423a6.061,6.061,0,0,1,.377-2.033,3.628,3.628,0,0,1,2.078-2.078,6.048,6.048,0,0,1,2.033-.377c1.01-.046,1.4-.059,3.442-.062Zm6.826,1.818A1.314,1.314,0,1,0,36.106,23.1a1.314,1.314,0,0,0-1.314-1.313Zm-5.844,1.535a5.622,5.622,0,1,0,5.621,5.622,5.622,5.622,0,0,0-5.621-5.622Zm0,1.973A3.649,3.649,0,1,1,25.3,28.948,3.649,3.649,0,0,1,28.949,25.3Z" transform="translate(-13.122 -13.123)" fill="#fff"/>
+                    </g>
+                  </svg>
+                </a>
+
+                <a class="hover-opacity-0-75" href="{{ content.blog_post_author.facebook }}" target="_blank">
+                  <svg id="g5" xmlns="http://www.w3.org/2000/svg" width="33.336" height="23.341" viewBox="0 0 33.336 23.341">
+                    <path id="path7" d="M32.649,3.652A4.177,4.177,0,0,0,29.711.714C27.1,0,16.668,0,16.668,0S6.233,0,3.625.686A4.262,4.262,0,0,0,.686,3.652,44.009,44.009,0,0,0,0,11.67a43.846,43.846,0,0,0,.686,8.018,4.177,4.177,0,0,0,2.938,2.938c2.636.714,13.043.714,13.043.714s10.435,0,13.043-.686a4.177,4.177,0,0,0,2.938-2.938,44.009,44.009,0,0,0,.686-8.018,41.788,41.788,0,0,0-.686-8.046Z" fill="red"/>
+                    <path id="polygon9" d="M37.266,19.292l-8.677-5v10Z" transform="translate(-15.243 -7.622)" fill="#fff"/>
+                  </svg>
+                  </a>
+              </div>
+
+            </div>
+            <div class="bg-red c-p-5">
+              <h3 class="text-white font-primary font-size-24 line-height-1-2">Subscribe for monthly news, updates, and more</h3>
+              <div class="c-mt-5">
+                {% module "blog_subscribe_form" path="@hubspot/blog_subscribe",
+                  title=""
+                %}
+              </div>
+              <span class="d-block text-white font-secondary font-size-14 c-mt-5"><span class="font-weight-black">Privacy Statement:</span> Shankle landjaeger boudin, prosciutto ribs ham hock. Chislic prosciutto Kevin turkey biltong.</span>
+            </div>
+          </div>
+
+          {% module "module_16063169799958" path="/mowntn/modules/mini-cta", label="mini-cta" %}
+        </div>
+        <div class="col-lg-8">
+          <div class="c-pl-xl-3">
+            {% module "module_160629583654425" path="/mowntn/modules/content-with-video", label="content-with-video" %}
+
+            {# Blog post #}
+            <div class="content-wrapper">
+              <article class="blog-post">
+                <div class="blog-post__body">
+                  {{ content.post_body }}
+                </div>
+              </article>
+
+              {% module "module_16064735778053" path="/mowntn/modules/video-block", label="video-block" %}
+
+              {% if group.allow_comments %}
+                <div class="blog-comments c-my-6">
+                  <span class="d-block text-red font-weight-bold line-height-1-6 font-size-24 letter-spacing-50">Leave your comment</span>
+                  {% module 'blog_comments'
+                    path='@hubspot/blog_comments',
+                    label="Blog comments"
+                  %}
+                </div>
+              {% endif %}
+            </div>
+            {# End blog post #}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {% module "module_16062381531426" path="/mowntn/modules/Call to action", label="Call to action" %}
+  
+  {% module "module_16062379011791" path="/mowntn/modules/blog-section", label="blog-section" %}
+
+</main>
+{% endblock body %}

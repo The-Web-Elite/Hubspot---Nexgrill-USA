@@ -1,0 +1,63 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page_meta.html_title }}</title>
+    {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    {# Where possible, improve page performance and speed by combining external http requests to reduce your
+      overall number of calls -- here, you can use a single call to the gFonts api to get all the fonts you need
+      https://developers.google.com/fonts/docs/getting_started
+    #}
+    {# Include theme overrides #}
+
+    {{ require_css(get_asset_url('../../css/theme-overrides.css')) }}
+    {{ require_css(get_asset_url('../../dist/main.css')) }}
+    {{ require_css(get_asset_url('../../dist/vendor.css')) }}
+    {{ require_css(get_asset_url('../../css/elements/typography.css')) }}
+    {{ require_css(get_asset_url('../../dist/custom.css')) }}
+    
+    {{ standard_header_includes }}
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main"></div>
+    <div class="main-content body-wrapper {{ builtin_body_classes }}">
+      {% block header %}
+       <header id="screen-reader-shortcut-header" class="main-header js-main-header fixed-top w-100">
+        {% global_partial path='../partials/header.html' %}
+
+        </header>
+      {% endblock header %}
+
+      {% block body %}
+      {% endblock body %}
+
+      {% block footer %}
+        {% global_partial path='../partials/footer.html' %}
+      {% endblock footer %}
+    </div>
+
+    <nav id="mobile-navigation" class="js-mobile-navigation">
+      <div id="subpanel" class="panel">
+
+         {% module 'site_search' path='@hubspot/search_input',
+              label='Search'
+          %}
+          {% menu "mobile_menu" id=32732738988, site_map_name='Default', overrideable=False, root_type='site_root', flyouts='true', max_levels='2', flow='horizontal', label='Advanced Menu' %}
+
+      </div>
+    </nav>
+
+    {{ require_js(get_asset_url('../../dist/main.bundle.js')) }}
+    {{ require_js(get_asset_url('../../dist/vendor.bundle.js')) }}
+    {{ standard_footer_includes }}
+  </body>
+</html>

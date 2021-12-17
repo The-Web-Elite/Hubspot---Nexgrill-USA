@@ -1,0 +1,90 @@
+[ {
+  "id" : "f8b3de70-8d96-418b-3bf8-f62706568fdb",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "2d23ae14-184d-139e-d338-72fd6de82e7b",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "98013dbd-6ec7-da88-88d0-b02706cef63a",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "a654fd28-6a86-887e-a45e-5d7ce1c45fa9",
+  "name" : "text2",
+  "display_width" : null,
+  "label" : "Text2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "d65e40f4-a959-2695-e7fd-308bf298f145",
+  "name" : "share_group",
+  "display_width" : null,
+  "label" : "Share",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "097ff787-5d72-24a7-78c7-154190b76b83",
+    "name" : "title_share",
+    "display_width" : null,
+    "label" : "Title-share",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "653b09c1-56e0-f16b-35d2-77c99674527f",
+    "name" : "subtitle_share",
+    "display_width" : null,
+    "label" : "Subtitle-share",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "0ac0f7e9-abd0-8ff6-e3c3-ca7665b51228",
+    "name" : "button_name",
+    "display_width" : null,
+    "label" : "Button name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+} ]

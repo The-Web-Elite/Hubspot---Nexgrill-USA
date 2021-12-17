@@ -1,0 +1,47 @@
+[ {
+  "id" : "13af0dc5-7bc7-7efb-2f79-d9299bcc0972",
+  "name" : "preheading",
+  "display_width" : null,
+  "label" : "Preheader",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "af69a636-5ad2-d447-f2b3-ea8871e49c49",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "99bd1d6d-af12-efeb-5601-7c7b50b402df",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+}, {
+  "id" : "73ec38fe-61f7-c9b3-1d1e-b05ab9a81bfc",
+  "name" : "video",
+  "display_width" : null,
+  "label" : "Video",
+  "required" : false,
+  "locked" : false,
+  "supported_source_types" : [ "html" ],
+  "supported_oembed_types" : [ "photo", "video", "link", "rich" ],
+  "resizable" : true,
+  "show_preview" : true,
+  "supported_media_bridge_providers" : [ ],
+  "type" : "embed",
+  "default" : {
+    "source_type" : "html"
+  }
+} ]

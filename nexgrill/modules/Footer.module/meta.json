@@ -1,0 +1,8 @@
+{
+  "global" : true,
+  "smart_type" : "NOT_SMART",
+  "host_template_types" : [ "PAGE", "BLOG_POST" ],
+  "module_id" : 46450981287,
+  "label" : "Footer global",
+  "is_available_for_new_content" : true
+}

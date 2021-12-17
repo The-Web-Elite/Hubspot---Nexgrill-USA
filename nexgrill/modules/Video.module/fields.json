@@ -1,0 +1,29 @@
+[ {
+  "id" : "825b114f-c157-d10a-20c3-4acaf9eae2dd",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "cd186f33-d8a7-7e6e-8ad1-fcfb654b03b3",
+  "name" : "youtube_url_video",
+  "display_width" : null,
+  "label" : "Youtube url  video",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]
