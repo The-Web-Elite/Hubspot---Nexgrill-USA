@@ -911,14 +911,14 @@ h6,
 
 /* ~~~~~~~~~~ Font family ~~~~~~~~~~ */
 .crunch-button,
-.hs-button, 
+.hs-button,
 .hs-form-field.hs-fieldtype-text > label,
 .hs-form-field.hs-fieldtype-date > label,
-.hs-form-field.hs-fieldtype-select > label, 
+.hs-form-field.hs-fieldtype-select > label,
 .form-secondary .hs-form-field.hs-fieldtype-text > label,
 .hs-form-field.hs-fieldtype-file > label,
-.font-secondary, 
-.main-header .hs-menu-wrapper .hs-menu-item, 
+.font-secondary,
+.main-header .hs-menu-wrapper .hs-menu-item,
 .cta-section .hs-form .hs-form-field input {
   font-family: "Oregon"; }
 
@@ -6410,18 +6410,18 @@ h6, .h6 {
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  
-  		 url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Regular.woff') format('woff'), 
-  		 url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Regular.ttf')  format('truetype'), 
+  src: url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  		 url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Regular.woff') format('woff'),
+  		 url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Regular.ttf')  format('truetype'),
   		 url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),  
-  		 url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Bold.woff') format('woff'), 
-  		 url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Bold.ttf')  format('truetype'), 
+  src: url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  		 url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Bold.woff') format('woff'),
+  		 url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Bold.ttf')  format('truetype'),
   		 url('https://f.hubspotusercontent10.net/hubfs/9073261/ProximaNova-Bold.svg#ProximaNova-Regular') format('svg');
   font-weight: bold;
   font-style: normal;
@@ -6578,51 +6578,82 @@ h6, .h6 {
     .form-secondary .hs-form-field.hs-fieldtype-text input:active, .form-secondary .hs-form-field.hs-fieldtype-text input:focus {
       border: 1px solid #19322F; }
 
+ul[role="checkbox"] {
+  list-style: none;
+}
+
+.hs-form-checkbox,
 .form-secondary .hs-fieldtype-booleancheckbox {
-  position: relative; }
-  .form-secondary .hs-fieldtype-booleancheckbox ul {
-    list-style: none; }
-  .form-secondary .hs-fieldtype-booleancheckbox label {
-    padding-left: 30px;
-    padding-top: 20px; }
-  .form-secondary .hs-fieldtype-booleancheckbox span {
-    font-family: "Proxima Nova";
-    color: #19322F;
-    line-height: 1.4; }
-  .form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"] {
-    display: none; }
-  .form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"] + span:before,
-  .form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"] + span:after {
-    transition: all .3s; }
-  .form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"] + span:after {
-    position: absolute;
-    left: 0;
-    top: 25px;
-    display: inline-block;
-    content: ' ';
-    width: 20px;
-    height: 20px;
-    border: 2px solid #19322F;
-    border-radius: 2px;
-    background-color: #fff;
-    z-index: 1000; }
-  .form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"]:checked + span:after {
-    background-color: #D7282F;
-    border-color: #D7282F; }
-  .form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"]:checked + span:before {
-    transform: rotate(45deg);
-    position: absolute;
-    left: 7px;
-    top: 27px;
-    width: 6px;
-    height: 13px;
-    border-width: 2px;
-    border-style: solid;
-    border-top: 0;
-    border-left: 0;
-    border-color: #fff;
-    content: '';
-    z-index: 10000; }
+  position: relative;
+}
+
+.hs-form-checkbox ul,
+.form-secondary .hs-fieldtype-booleancheckbox ul {
+  list-style: none;
+}
+
+.hs-form-checkbox label,
+.form-secondary .hs-fieldtype-booleancheckbox label {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.hs-form-checkbox span,
+.form-secondary .hs-fieldtype-booleancheckbox span {
+  font-family: "Proxima Nova";
+  color: #19322F;
+  line-height: 1.4;
+}
+
+.hs-form-checkbox input[type="checkbox"],
+.form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"] {
+  display: none;
+}
+
+.hs-form-checkbox input[type="checkbox"]+span:before,
+.form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"]+span:before,
+.hs-form-checkbox input[type="checkbox"]+span:after,
+.form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"]+span:after {
+  transition: all .3s;
+}
+
+.hs-form-checkbox input[type="checkbox"]+span:after,
+.form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"]+span:after {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  display: inline-block;
+  content: ' ';
+  width: 20px;
+  height: 20px;
+  border: 2px solid #19322F;
+  border-radius: 2px;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.hs-form-checkbox input[type="checkbox"]:checked+span:after,
+.form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"]:checked+span:after {
+  background-color: #D7282F;
+  border-color: #D7282F;
+}
+
+.hs-form-checkbox input[type="checkbox"]:checked+span:before,
+.form-secondary .hs-fieldtype-booleancheckbox input[type="checkbox"]:checked+span:before {
+  transform: rotate(45deg);
+  position: absolute;
+  left: 7px;
+  top: 27px;
+  width: 6px;
+  height: 13px;
+  border-width: 2px;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-color: #fff;
+  content: '';
+  z-index: 10000;
+}
 
 .form-secondary .hs_submit {
   margin-top: 20px; }
@@ -14366,5 +14397,3 @@ body.modal-open #cookie-notice {
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
-
-
