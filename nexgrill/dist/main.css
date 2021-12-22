@@ -13937,20 +13937,38 @@ body.modal-open #cookie-notice {
   .register-section__wrapper--nobg:before {
     background-color: transparent; }
 
-.register-section .hs-main-font-element {
-  margin-top: 2rem; }
-  @media (min-width: 576px) {
-    .register-section .hs-main-font-element {
-      margin-top: 2.5rem; } }
-  @media (min-width: 768px) {
-    .register-section .hs-main-font-element {
-      margin-top: 3rem; } }
-  @media (min-width: 992px) {
-    .register-section .hs-main-font-element {
-      margin-top: 3.5rem; } }
-  @media (min-width: 1200px) {
-    .register-section .hs-main-font-element {
-      margin-top: 4rem; } }
+.register-section .hs-main-font-element,
+.hs_subscription_preference {
+  margin-top: 2rem;
+}
+
+@media (min-width: 576px) {
+  .register-section .hs-main-font-element,
+  .hs_subscription_preference {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .register-section .hs-main-font-element,
+  .hs_subscription_preference {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .register-section .hs-main-font-element,
+  .hs_subscription_preference {
+    margin-top: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .register-section .hs-main-font-element,
+  .hs_subscription_preference {
+    margin-top: 4rem;
+  }
+}
 
 .register-section .hs-main-font-element h3 {
   position: relative;
