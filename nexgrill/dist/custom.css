@@ -48,6 +48,7 @@ span.footer_numbers {
     line-height: 1.1;
     margin-bottom: .55em;
     letter-spacing: .08em;
+    color: var(--dark4);
 }
 
 .hero-form__image-2 {
