@@ -4,6 +4,20 @@ Github integration ✅
 
 #### GETTING STARTED
 
+Generate a config file with your authentication config (this file must be untracked by git):
+
+```
+hs auth
+```
+- Select the account you want to work with
+- Enter the name of the account (eg: live or dev)
+
+Fetch files from Hubspot to update the repository:
+
+```
+hs fetch --account=<account-name> <src> [dest] --overwrite
+```
+
 Push your development branch to sandbox portal:
 
 ```
