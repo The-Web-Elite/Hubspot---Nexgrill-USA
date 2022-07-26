@@ -5,29 +5,31 @@ Github integration ✅
 #### GETTING STARTED
 
 Generate a config file with your authentication config (this file must be untracked by git):
-
 ```
 hs auth
 ```
 - Select the account you want to work with
 - Enter the name of the account (eg: live or dev)
+- For all following commands:
+  - replace `<account-name>` with your account name
+  - replace `<src>` with the source folder name (depending on the direction of your request), eg:
+    - if you are fetching, your src folder would be the one on hubspot
+    - If you are uploading or watching, your src folder would be the local folder
+  - replace `[dest]` with the destination folder name (depending on the direction, as above)
 
 Fetch files from Hubspot to update the repository:
-
 ```
 hs fetch --account=<account-name> <src> [dest] --overwrite
 ```
 
 Push your development branch to sandbox portal:
-
 ```
-hs upload --account=sandbox nexgrill nexgrill
+hs upload --account=<account-name> <src> [dest]
 ```
 
 Start watching local files and developing:
-
 ```
-hs watch --account=sandbox nexgrill nexgrill
+hs watch --account=<account-name> <src> [dest]
 ```
 
 #### DEPLOYMENT PROCESSES
