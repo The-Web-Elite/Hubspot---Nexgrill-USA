@@ -14037,6 +14037,7 @@ body.modal-open #cookie-notice {
   list-style: none; }
 
 .footer-links .hs-menu-item {
+  font-size: .85em;
   margin-top: 0.625rem; }
   .footer-links .hs-menu-item a {
     font-weight: 700;
